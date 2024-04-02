@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Page</title>
     <link rel="stylesheet" href="./style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="navbar">
@@ -12,7 +13,7 @@
             <div class="navbar-content">
                 <div class="brand-and-toggler">
                     <img src="./logo1.png" alt="logo" class="project-logo">
-                    <span class = "navbar-brand-text" style="margin-right: 86%;">Resume Build</span>
+                    <h1 class = "navbar-brand-text">Resume Build</h1>
                 </div>
                 
             </div>
@@ -26,7 +27,7 @@
 
 
     </div>
-
+<div class="warp-cnt">
     <section id="about-sc">
         <div class="container">
             <div class="about-cnt">
@@ -306,14 +307,14 @@
 
     <section id = "preview-sc" class = "print_area">
         <div class = "container">
-            <div class = "preview-cnt">
-                <div class = "preview-cnt-l bg-green text-white">
+            <div class = "preview-cnt" id="preview-container">
+                <div class = "preview-cnt-l">
                     <div class = "preview-blk">
                         <div class = "preview-image">
                             <img src = "" alt = "" id = "image_dsp"> 
                         </div>
                         <div class = "preview-item preview-item-name">
-                            <span class = "preview-item-val fw-6" id = "fullname_dsp"></span>
+                            <span class = "preview-item-val" id = "fullname_dsp"></span>
                         </div>
                         <div class = "preview-item">
                             <span class = "preview-item-val text-uppercase fw-6 ls-1" id = "designation_dsp"></span>
@@ -381,14 +382,20 @@
                 </div>
             </div>
         </div>
+        <section class = "print-btn-sc">
+            <div class = "container" id="print-container">
+                <!-- <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print Resume</button> -->
+                <button class = "print-btn btn btn-primary" type="button" onclick="downloadCode();">Download</button>
+                <button class = "print-btn btn btn-primary" id="job-sg" style="margin-left: 30%;" type="button" >Job Suggestion</button>
+                <button class = "print-btn btn btn-primary" id="job-sg" style="margin-left: 5%;" type="button" >Project Recommendation</button>
+            </div>
+        </section>
     </section>
+   
 
-    <section class = "print-btn-sc">
-        <div class = "container">
-            <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print Resume</button>
-        </div>
-    </section>
+</div>
 
+   
 
 
 

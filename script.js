@@ -17,3 +17,20 @@ $(document).ready(function(){
         isFirstItemUndeletable: true
     })
 })
+
+
+
+
+        function generatePDF() {
+
+            const element = document.getElementById("preview-sc");
+
+            html2pdf().from(element).save('download.pdf');
+        }
+
+        function downloadCode() {
+
+            generatePDF();
+
+        }
+    

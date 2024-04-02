@@ -2,16 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+body{
+  background: linear-gradient(122deg, #f8ffa8 1.76%, #21ffb1 103.04%);
+}
 header{
+  color: #018636;
     display: flex;
     text-align: left;
     justify-content: left;
     align-items: center;
 }
 header img{
-     height: 110px;
+     height: 140px;
      width: 150px;
 }
 header h1{
@@ -25,12 +29,14 @@ section {
     padding: 20px;
 }
 .project-details {
+  color: rgb(0, 68, 30);
     flex-grow: 1;
     padding: 0 20px;
     margin-bottom: 100px;
     margin-top: 50px;
 }
 .project-details h1 {
+  color: #000000;
     font-size: 40px;
     display: inline-block;
     margin-bottom: 10px;
@@ -38,16 +44,19 @@ section {
 }
 
 .project-details h3 {
+  color: rgb(48, 72, 71);
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
 .project-description {
     font-size: 2em;
     line-height: 1.5;
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
 .resume-button {
     display: inline-block;
     padding: 15px 50px;
@@ -100,7 +109,7 @@ section {
   align-items: center;
 }
 .custom_container img{
-   height: 110px;
+   height: 140px;
    width: 150px;
 }
 .custom_container h1{
@@ -120,6 +129,11 @@ section {
 .stay-connected{
   display: flex;
   flex-direction: column;
+}
+.stay-connected i{
+  cursor: pointer;
+  color: rgb(202, 202, 202);
+  
 }
 
 .sociallinks{
@@ -168,4 +182,17 @@ section {
   margin-bottom: 15px;
   font-size: 20px;
 
+ }
+ footer{
+  margin-top: 10%;
+  color: white;
+  background-color: black;
+ }
+ .about a{
+  color: rgb(202, 202, 202);
+  text-decoration: none;
+ }
+ .service a{
+  color: rgb(202, 202, 202);
+  text-decoration: none;
  }

@@ -19,6 +19,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /* fonts */
@@ -107,18 +109,20 @@
     padding: 1.4rem 1.6rem;
     border-radius: 4px;
     display: inline-block;
+    
 }
 
 .btn-primary{
-    background: linear-gradient(122deg, #FBB8FF 1.76%, #ABF7F8 103.04%);
-    color: var(--clr-blacke);
+    background-color: #00566b;
+    color: white;
     border: 1px solid var(--clr-blue);
     transition: var(--transition);
 }
 
 .btn-primary:hover{
     background-color: transparent;
-    color: var(--clr-dark);
+    /* color: var(--clr-dark); */
+    color: #00566b;
     border-color: var(--clr-grey);
 }
 
@@ -140,10 +144,10 @@
 }
 
 .navbar{
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
-    background: linear-gradient(122deg, #FBB8FF 1.76%, #ABF7F8 103.04%);
+    background: linear-gradient(122deg, #f8ffa8 1.76%, #21ffb1 103.04%);
 }
 
 .navbar .container{
@@ -156,7 +160,7 @@
     font-size: 1.8rem;
 }
 .navbar-brand-text{
-    color: #00802f;
+    color: #018636;
     font-weight: 600;
     font-size: 1.5em;
 }
@@ -166,12 +170,16 @@
 .navbar-brand-icon{
     width: 25px;
     margin-right: 6px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+}
+.warp-cnt{
+    display: flex;
+    flex-direction: row;
 }
 .brand-and-toggler{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .brand-and-toggler img{
     /* margin-left: 10%; */
@@ -179,6 +187,7 @@
     width: 110px;
 }
 #about-sc{
+    width: 30%;
     padding: 64px 0;
 }
 
@@ -193,7 +202,7 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 .cv-form-blk{
     margin: 3rem 0;
@@ -245,9 +254,10 @@ textarea{
     display: grid;
 }
 .repeater-add-btn{
-    width: 25px;
-    height: 25px;
-    background-color: var(--clr-blue-mid);
+    border-radius: 50%;
+    width: 30px;
+    /* height: 25px; */
+    background-color: rgb(13, 143, 13);
     font-size: 1.6rem;
     color: var(--clr-white);
     margin: 1rem 0;
@@ -257,22 +267,31 @@ textarea{
     top: 10px;
     right: 10px;
     z-index: 999;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    /* height: 25px; */
     border-radius: 50%;
     background-color: #ca0b00;
     color: var(--clr-white);
     font-size: 1.6rem;
 }
 .preview-cnt{
+    font-size: 0.9em;
+    margin-left: 5%;
+    margin-top: 22%;
+    width: 100%;
     border-radius: 5px;
     display: grid;
     grid-template-columns: 32% auto;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.644) 0px 8px 24px;
     overflow: hidden;
+}
+.preview-cnt .container{
+    width: 100%;
 }
 
 .preview-cnt-l{
+    background-color: #00566b;
+    color: white;
     padding: 3rem 3rem 2rem 3rem;
 }
 .preview-cnt-r{
@@ -295,7 +314,7 @@ textarea{
     object-fit: cover;
 }
 .preview-item-name{
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 1.8rem 0;
     position: relative;
@@ -324,8 +343,8 @@ textarea{
     margin-bottom: 1rem;
 }
 .preview-blk-list .preview-item{
-    font-size: 1.5rem;
-    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
     opacity: 0.95;
 }
 .preview-cnt-r .preview-blk-title{
@@ -360,10 +379,12 @@ textarea{
 .experiences-items.preview-blk-list .preview-item span:nth-child(4),
 .experiences-items.preview-blk-list .preview-item span:nth-child(5){
     margin-right: 1rem;
-    background-color: var(--clr-green);
+    background-color: #00566b;;
     color: var(--clr-white);
-    padding: 0 1rem;
+    padding: 0.1rem 1rem;
     border-radius: 0.6rem;
+    font-size: 0.9em;
+    font-weight: 200;
 }
 
 .educations-items.preview-blk-list .preview-item span:nth-child(6),
@@ -437,7 +458,24 @@ textarea{
 .section-two .text{
     margin: 0.9rem 0;
 }
-
+.print-btn-sc{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+#job-sg{
+    background-color: #045991;
+    color: white;
+    border: 1px solid var(--clr-blue);
+    transition: var(--transition);
+}
+#job-sg:hover{
+    background-color: transparent;
+    /* color: var(--clr-dark); */
+    color:  #045991;
+    border-color: var(--clr-grey);
+}
 /* footer */
 .footer{
     padding: 3rem 0;
