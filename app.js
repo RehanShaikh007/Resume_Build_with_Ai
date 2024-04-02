@@ -15,6 +15,9 @@ const validType = {
     ANY: 'any',
 }
 
+let joblist=[];
+let listjob=[];
+
 // user inputs elements
 let firstnameElem = mainForm.firstname,
     middlenameElem = mainForm.middlename,
@@ -186,6 +189,19 @@ const showListData = (listData, listContainer) => {
             let subItemElem = document.createElement('span');
             subItemElem.classList.add('preview-item-val');
             subItemElem.innerHTML = `${listItem[key]}`;
+            if(listContainer === skillsDsp){
+                
+                console.log(subItemElem.innerHTML);
+                const isIncluded = joblist.includes(subItemElem.innerHTML);
+                console.log(isIncluded);
+                if(isIncluded === false)
+                // console.log(joblist.find((ele)=>{return ele!==subItemElem.innerHTML}));
+
+                joblist.push(subItemElem.innerHTML);
+
+            }
+        
+
             itemElem.appendChild(subItemElem);
         }
 
@@ -226,4 +242,82 @@ function previewImage(){
 function printCV(){
     window.print();
     
+}
+let url ;
+function showjobdata(){
+    
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'dbab18be68msh283e2b169f5f563p1e5020jsn86680e739786',
+            'X-RapidAPI-Host': 'jobs-api14.p.rapidapi.com'
+        }
+    };
+async function apifetching(){
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        console.log(result);
+        listjob.push(result.jobs);
+        listjob.forEach((ele)=>{
+            // R_left.innerHTML="";
+            // Jobs_recommended.style.display="block";
+            ele.forEach((elem)=>{
+                // if(elem.description.length>70)
+                // {
+                //     elem.description=(elem.description).slice(0,150);
+                // }
+                // elem.description=`${elem.description} <a href="#">see more</a>`;
+                // let div=document.createElement("div");
+                // div.innerHTML=`<h2>${elem.title}</h2>
+                // <p>${elem.company}</p>
+                // <p>${elem.location}</p>
+                // <p>${elem.employmentType}
+                // <p>${elem.description}</p>
+                // <br>
+                // <a href="elem.jobProviders[0].url">Apply Now</a>`;
+                // div.style.border="2px solid black";
+                // div.style.padding="15px";
+                // div.style.margin="10px";
+                // div.style.borderRadius="15px";
+                // Jobs_recommended.appendChild(div);
+                console.log(elem.company);
+                console.log(elem.title);
+                console.log(elem.jobProviders[0].url);
+                console.log(elem.location);
+                console.log(elem.employmentType);
+                console.log(elem.description);
+            })
+            // R_left.appendChild(Jobs_recommended);
+        })
+    
+    React
+    
+    Reply
+    
+    
+    
+    
+    
+    
+    
+    
+    } catch (error) {
+        console.error(error);
+    }
+    
+}
+
+    console.log(joblist);
+    
+
+
+    joblist.forEach((ele)=>{
+        if(ele)
+        {
+            url = `https://jobs-api14.p.rapidapi.com/list?query=${ele}&location=India`;
+
+           apifetching();
+        }
+    })
 }
