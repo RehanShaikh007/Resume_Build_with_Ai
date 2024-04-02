@@ -237,7 +237,7 @@ function previewImage(){
         imageDsp.src = ofEvent.target.result;
     }
 }
-
+const preview = document.querySelector('#preview-sc')
 // print CV
 function printCV(){
     window.print();

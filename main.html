@@ -6,6 +6,8 @@
     <title>Resume Page</title>
     <link rel="stylesheet" href="./style2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <div class="navbar">
@@ -304,96 +306,192 @@
 
 
     </section>
-
-    <section id = "preview-sc" class = "print_area">
-        <div class = "container">
-            <div class = "preview-cnt" id="preview-container">
-                <div class = "preview-cnt-l">
-                    <div class = "preview-blk">
-                        <div class = "preview-image">
-                            <img src = "" alt = "" id = "image_dsp"> 
-                        </div>
-                        <div class = "preview-item preview-item-name">
-                            <span class = "preview-item-val" id = "fullname_dsp"></span>
-                        </div>
-                        <div class = "preview-item">
-                            <span class = "preview-item-val text-uppercase fw-6 ls-1" id = "designation_dsp"></span>
-                        </div>
-                    </div>
-
-                    <div class = "preview-blk">
-                        <div class = "preview-blk-title">
-                            <h3>about</h3>
-                        </div>
-                        <div class = "preview-blk-list">
-                            <div class = "preview-item">
-                                <span class = "preview-item-val" id = "phoneno_dsp"></span>
+     <div id="main-preview">
+        <section id = "preview-sc" class = "print_area">
+            <div class = "container">
+                <div class = "preview-cnt" id="preview-container">
+                    <div class = "preview-cnt-l">
+                        <div class = "preview-blk">
+                            <div class = "preview-image">
+                                <img src = "" alt = "" id = "image_dsp"> 
+                            </div>
+                            <div class = "preview-item preview-item-name">
+                                <span class = "preview-item-val" id = "fullname_dsp"></span>
                             </div>
                             <div class = "preview-item">
-                                <span class = "preview-item-val" id = "email_dsp"></span>
-                            </div>
-                            <div class = "preview-item">
-                                <span class = "preview-item-val" id = "address_dsp"></span>
-                            </div>
-                            <div class = "preview-item">
-                                <span class = "preview-item-val" id = "summary_dsp"></span>
+                                <span class = "preview-item-val text-uppercase fw-6 ls-1" id = "designation_dsp"></span>
                             </div>
                         </div>
+    
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>about</h3>
+                            </div>
+                            <div class = "preview-blk-list">
+                                <div class = "preview-item">
+                                    <span class = "preview-item-val" id = "phoneno_dsp"></span>
+                                </div>
+                                <div class = "preview-item">
+                                    <span class = "preview-item-val" id = "email_dsp"></span>
+                                </div>
+                                <div class = "preview-item">
+                                    <span class = "preview-item-val" id = "address_dsp"></span>
+                                </div>
+                                <div class = "preview-item">
+                                    <span class = "preview-item-val" id = "summary_dsp"></span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>skills</h3>
+                            </div>
+                            <div class = "skills-items preview-blk-list" id = "skills_dsp">
+                                <!-- skills list here -->
+                            </div>
+                        </div>
                     </div>
-
-                    <div class = "preview-blk">
-                        <div class = "preview-blk-title">
-                            <h3>skills</h3>
+    
+                    <div class = "preview-cnt-r bg-white">
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>Achievements</h3>
+                            </div>
+                            <div class = "achievements-items preview-blk-list" id = "achievements_dsp"></div>
                         </div>
-                        <div class = "skills-items preview-blk-list" id = "skills_dsp">
-                            <!-- skills list here -->
+    
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>educations</h3>
+                            </div>
+                            <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
                         </div>
-                    </div>
-                </div>
-
-                <div class = "preview-cnt-r bg-white">
-                    <div class = "preview-blk">
-                        <div class = "preview-blk-title">
-                            <h3>Achievements</h3>
+    
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>experiences</h3>
+                            </div>
+                            <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
                         </div>
-                        <div class = "achievements-items preview-blk-list" id = "achievements_dsp"></div>
-                    </div>
-
-                    <div class = "preview-blk">
-                        <div class = "preview-blk-title">
-                            <h3>educations</h3>
+    
+                        <div class = "preview-blk">
+                            <div class = "preview-blk-title">
+                                <h3>projects</h3>
+                            </div>
+                            <div class = "projects-items preview-blk-list" id = "projects_dsp"></div>
                         </div>
-                        <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
-                    </div>
-
-                    <div class = "preview-blk">
-                        <div class = "preview-blk-title">
-                            <h3>experiences</h3>
-                        </div>
-                        <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
-                    </div>
-
-                    <div class = "preview-blk">
-                        <div class = "preview-blk-title">
-                            <h3>projects</h3>
-                        </div>
-                        <div class = "projects-items preview-blk-list" id = "projects_dsp"></div>
                     </div>
                 </div>
             </div>
-        </div>
+            
+        </section>
         <section class = "print-btn-sc">
             <div class = "container" id="print-container">
-                <!-- <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print Resume</button> -->
-                <button class = "print-btn btn btn-primary" id="download" type="button" onclick="downloadCode();">Download</button>
-                <button class = "print-btn btn btn-primary" id="job-sg" style="margin-left: 30%;" onclick="showjobdata()" type="button" >Job Suggestion</button>
-                <button class = "print-btn btn btn-primary" id="job-sg" style="margin-left: 5%;" type="button" >Project Recommendation</button>
+                <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print <i  class="fa fa-download"></i></button>
+                <button class = "print-btn btn btn-primary" id="download" type="button" onclick="downloadCode();"></i>Download <i  class="fa fa-download"></i></button>
+                <button class = "print-btn btn btn-primary" id="job-sg" style="margin-left: 0%;" onclick="showjobdata()" type="button" >Job Suggestion</button>
+                <button class = "print-btn btn btn-primary" id="job-sg" style="margin-left: 0%;" type="button" >Project Recommendation</button>
             </div>
         </section>
-    </section>
+
+        <section id="job-project">
+            <div class="job-suggest">
+                <h1><i>Job Suggestion</i></h1>
+
+
+
+
+
+
+            </div>
+
+            <div class="project-suggest">
+                <h1><i>Project Recommendation</i></h1>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </section>
+     </div>
+    
    
 
 </div>
+
+<footer>
+    <div class="custom_container">
+      <img src="./logo1.png" alt="logo">
+      <h1>Resume Build</h1>
+    </div>
+    <div class="footer-links">
+
+
+      <div class="stay-connected">
+        <h2 class="stay-connected-heading">Social Connect</h2>
+        <div class="sociallinks">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+      </div>
+      <div class="imgplay">
+        <a href="no.html"><img src="./apple.jpg" alt="Apple App Store" width="160" height="50"></a>
+              <a href="no.html"><img src="./playstore.png" alt="Google Play Store" width="160" height="50"></a>
+      </div>
+      </div>
+
+
+      <div class="about">
+        <h2 class="about-resume-builder">About</h2>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    
+
+
+      </div>
+
+
+      <div class="service">
+        <h2 class="service-heading">Our Service</h2>
+        <a href="#">Resume</a>
+      <a href="#">Coverletter</a>
+      <a href="#">Template</a>
+      <a href="#">Job Suggestion</a>
+      <a href="#">Github Project Recommendation</a>
+
+
+
+
+
+
+      </div>
+
+
+
+      
+
+
+
+
+    </div>
+
+
+  </footer>
+
 
    
 
