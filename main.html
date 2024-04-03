@@ -392,7 +392,7 @@
                 <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print <i  class="fa fa-download"></i></button>
                 <button class = "print-btn btn btn-primary" id="download" type="button" onclick="downloadCode();"></i>Download <i  class="fa fa-download"></i></button>
                 <button class = "print-btn btn btn-primary" id="job-sg" style="margin-left: 0%;" onclick="showjobdata()" type="button" >Job Suggestion</button>
-                <button class = "print-btn btn btn-primary" id="job-sg" style="margin-left: 0%;" type="button" >Project Recommendation</button>
+                <button class = "print-btn btn btn-primary project_sg" id="job-sg" style="margin-left: 0%;" type="button" >Project Recommendation</button>
             </div>
         </section>
 
@@ -496,11 +496,87 @@
 
 
 
-
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!-- jquery repeater cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
     <script src="app.js"></script>
+   <script type="module">
+    
+        // let defaults = document.querySelector(".default");
+        // let btn = document.querySelector(".btn");
+        // let inputText = document.querySelector("#inputText");
+        // let container = document.querySelector(".container");
+        //   alert("start");
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+    const API_KEY = "AIzaSyBIEScln1EtBCi61VYNPaogJ8U7Fe-LFEA";
+
+        // Access your API key (see "Set up your API key" above)
+        const genAI = new GoogleGenerativeAI(API_KEY);
+        let bool = false;
+        async function run(prompts) {
+            // For text-only input, use the gemini-pro model
+            const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+           
+
+                    // let div2 = document.createElement("div");
+                    // div2.innerText = prompt;
+                    // div2.style.fontSize = "30px";
+                    // div2.style.fontWeight = "bold";
+                    // div2.style.color = "white";
+                    // // div2.style.backgroundColor = "grey";
+                    // div2.style.display = "inline-block";
+                    // div2.style.padding = "5px 10px";
+                    // div2.style.borderRadius = "10px";
+                    // container.appendChild(div2);
+                    // console.log(container.length);
+                    console.log(joblist);
+                    const result = await model.generateContent(prompts);
+                    const response = await result.response;
+    const text = response.text();
+    const md = window.markdownit();
+    const htmlMarkup = md.render(text);
+    let div1 = document.createElement("div");
+    div1.style.fontSize
+    // div1.style.color = "white";
+    // div1.style.padding = "0 10%";
+    div1.innerHTML = `${htmlMarkup}`;
+    document.querySelector(".project_suggest").appendChild(div1);
+    console.log(htmlMarkup);
+    document.querySelector("#project_section").style.display="block";
+    // console.log(response);
+                    // console.log(ele);
+                   
+                  
+                   
+    
+    
+
+            
+  }
+        // }
+        document.querySelector(".project_sg").addEventListener('click', project_api);
+        // inputText.addEventListener('change', run);
+       function project_api(){
+        joblist.forEach((ele)=>{
+               
+                    
+                    
+               const prompt = `Project based on the Skills ${ele}`;
+               console.log(prompt);
+               run(prompt);
+       })
+       }
+   
+   </script>
+   
 </body>
 </html>

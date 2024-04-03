@@ -498,6 +498,21 @@ textarea{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#project_section{
+    display: none;
+    margin-top: 10%;
+    width: 100%;
+    /* border: 2px solid red; */
+   
+}
+
+.project_css{
+    font-size: 5em;
+}
+
+
+
+
 /* footer */
 .footer{
     padding: 3rem 0;
