@@ -140,13 +140,15 @@ section {
     margin: 90px 75px;
   }
   .template h1{
+    color: #018636;
     padding: 2% 0;
     width: auto;
-    border: 2px solid black;
+    border: 1px solid #018636;
     border-radius: 60px;
     font-size: 2.5em;
     margin-bottom: 8%;
   }
+  
 
   .template_img_cnt{
     display: flex;
@@ -157,6 +159,7 @@ section {
     /* flex-direction: column; */
   }
   .template_container img{
+    border-radius: 14px;
     width: 100%;
     height: 500px;
   }
@@ -164,6 +167,7 @@ section {
     /* margin-right: 5%; */
   }
 .template_container img:hover{
+  box-shadow: 12px 12px 24px #37ca72;
   scale: 1.2;
   transition: 0.5s ease-in-out;
 }
@@ -261,3 +265,255 @@ section {
   color: rgb(202, 202, 202);
   text-decoration: none;
  }
+
+
+
+
+ @media only screen and (max-width: 768px) {
+  body {
+      font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  /* Adjust header */
+  header {
+      text-align: center;
+  }
+
+  /* Adjust navigation links */
+  nav a {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  /* Adjust project-details */
+  .project-details {
+      text-align: center;
+  }
+
+  /* Adjust project-description */
+  .project-description {
+      font-size: 16px; /* Increase font size for better readability */
+  }
+
+  /* Adjust project-image */
+  .project-image img {
+      width: 100%; /* Ensure the image takes the full width of the container */
+  }
+
+  /* Adjust template section */
+  .template {
+    width: 80%;
+      text-align: center;
+  }
+  .template h1 {
+    color: #018636;
+    padding: 2% 0;
+    width: auto;
+    border: 1px solid #018636;
+    border-radius: 60px;
+    font-size: 1.5em;
+    margin-bottom: 8%;
+}
+  .template_container img {
+    border-radius: 14px;
+    width: 90%;
+    height: 345px;
+}
+
+  /* Adjust templateimg */
+  .templateimg {
+      width: 300px;
+      height: 200px; /* Maintain aspect ratio */
+       /* Ensure it doesn't exceed its original size */
+     
+      
+      margin: 0 auto;
+      margin-top: 40px;
+      
+      text-align: center; /* Adjust image width */
+  }
+
+  /* Adjust box container */
+  .box .container {
+      flex-direction: column; /* Change flex direction to stack elements vertically */
+      align-items: center; /* Center align items */
+  }
+
+  /* Adjust custom-div */
+ 
+
+  .custom-div {
+      width: 320px;
+      height: 300px;
+      flex-shrink: 0;
+      margin-top: 50px;
+      border-radius: 26px;
+      background: linear-gradient(180deg, #ABF7F8 0%, #E6A2F1 100%);
+      margin-right: 10px; /* Adjust margin as needed */
+  }
+
+  /* Adjust custom-image */
+  
+
+  .custom-image {
+      width: 100px;
+      height: 150.717px;
+      margin-right: 10px;
+  }
+  .box {
+      margin: 20px; /* Adjust margin as needed */
+  }
+  
+  .container h2{
+      margin-bottom: 4px;
+      font-size: 15px;
+
+  }
+  .container p {
+      /* Your shared styles for h2 and p within .container */
+      padding: 15px; /* Add the desired padding value */
+      font-weight: bold;
+     
+  }
+  .container p {
+      margin-bottom: 10px;
+      font-size: 15px;
+  }
+  
+  .custom-container {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  
+
+  /* Adjust animation section */
+  .animation {
+      text-align: center;
+  }
+
+  /* Adjust round buttons */
+  .round-button {
+      display: inline-block;
+      margin: 10px;
+  }
+
+  /* Adjust footer */
+  footer {
+      text-align: center;
+      display: block;
+  }
+
+  /* Adjust footer-links */
+ 
+
+  /* Adjust sociallinks */
+  .sociallinks {
+    font-size: 24px;
+      margin-bottom: 20px; /* Add space between social icons */
+  }
+
+  /* Adjust imgplay */
+  .imgplay {
+      margin-top: 20px; /* Add space above app store images */
+  }
+  .imgplay img {
+    width: 97px;
+    height: 35px;
+}
+.about a {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.service a {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+  /* Adjust centered-content */
+  .centered-content {
+      text-align: center;
+      margin-top: 20px; /* Add space above the international section */
+  }
+
+  /* Adjust Flag image */
+  .centered-content img {
+      display: block;
+      margin: 0 auto; /* Center the image */
+  }
+
+  /* Adjust copyright-content */
+  .copyright-content {
+      text-align: center;
+      margin-top: 20px; /* Add space above copyright text */
+  }
+ /* Adjust footer-linkse for smaller screens */
+ .footer-linkse {
+  text-align: center; /* Center align the links */
+  margin-bottom: 20px; /* Add some space below each link section */
+}
+
+.footer-linkse a {
+  display: block; /* Make each link a block element */
+  margin-bottom: 5px; /* Add some space between each link */
+}
+#flag{
+  margin-right: 220px;
+}
+#flagimg{
+  margin-left: 210px;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Align items to start and evenly distribute space between them */
+ 
+}
+
+.footer-links .stay,
+.footer-links .footer-linkse {
+  flex-basis: calc(50% - 10px); /* Each column takes up 50% width with 10px spacing in between */
+  padding: 0 5px; /* Add spacing between columns */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Adjust column width for smaller screens */
+
+  .footer-links .stay,
+  .footer-links .footer-linkse {
+      flex-basis: 100%; /* Each column takes up 100% width on smaller screens */
+  }
+  .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  
+  .column {
+      flex-basis: 48%; /* Each column takes up almost half of the container */
+  }
+
+
+  .custom_container img {
+    height: 100px;
+    width: 100px;
+}
+
+.custom_container h1 {
+  margin: 40px 0;
+  font-size: 1.8em;
+}
+  
+  /* Adjust column width for smaller screens */
+  @media only screen and (max-width: 768px) {
+      .column {
+          flex-basis: 100%; /* Each column takes up 100% width on smaller screens */
+          margin-bottom: 20px; /* Add space between columns on smaller screens */
+      }
+  }
+  
+  
+    
+
+
+}

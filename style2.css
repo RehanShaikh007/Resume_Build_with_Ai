@@ -22,6 +22,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+body{
+    background-color: rgba(247, 255, 230, 0.801);
+}
 
 /* fonts */
 .font-poppins{font-family: var(--font-poppins);}
@@ -162,7 +165,7 @@
 .navbar-brand-text{
     color: #018636;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .navbar-brand-text span{
     color: var(--clr-blue);
@@ -192,7 +195,7 @@
 }
 
 .cv-form-row-title{
-    background-color: var(--clr-dark);
+    background-color: #03652a;
     padding: 0.8rem 1.6rem;
     margin-bottom: 2rem;
 }
