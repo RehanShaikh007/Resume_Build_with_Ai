@@ -244,6 +244,9 @@ function printCV(){
     
 }
 let url ;
+const job_section = document.getElementById("job_section");
+const job_suggest = document.querySelector(".job_suggest");
+
 function showjobdata(){
     
     const options = {
@@ -260,27 +263,32 @@ async function apifetching(){
         console.log(result);
         listjob.push(result.jobs);
         listjob.forEach((ele)=>{
-            // R_left.innerHTML="";
-            // Jobs_recommended.style.display="block";
+            
+            job_section.style.display="block";
             ele.forEach((elem)=>{
-                // if(elem.description.length>70)
-                // {
-                //     elem.description=(elem.description).slice(0,150);
-                // }
-                // elem.description=`${elem.description} <a href="#">see more</a>`;
-                // let div=document.createElement("div");
-                // div.innerHTML=`<h2>${elem.title}</h2>
-                // <p>${elem.company}</p>
-                // <p>${elem.location}</p>
-                // <p>${elem.employmentType}
-                // <p>${elem.description}</p>
-                // <br>
-                // <a href="elem.jobProviders[0].url">Apply Now</a>`;
+                if(elem.description.length>70)
+                {
+                    elem.description=(elem.description).slice(0,150);
+                }
+                elem.description=`${elem.description} <a href="#">see more</a>`;
+                let div=document.createElement("div");
+                div.innerHTML=`<h2>${elem.title}</h2>
+                <p>${elem.company}</p>
+                <p>${elem.location}</p>
+                <p>${elem.employmentType}
+                <p>${elem.description}</p>
+                <br>
+                <a href="elem.jobProviders[0].url">Apply Now</a>`;
                 // div.style.border="2px solid black";
-                // div.style.padding="15px";
-                // div.style.margin="10px";
+                div.style.padding="15px";
+                div.style.margin="10px";
                 // div.style.borderRadius="15px";
-                // Jobs_recommended.appendChild(div);
+                div.style.width="45%";
+                div.style.backgroundColor="rgb(168, 233, 255)";
+                div.style.color="dark-blue";
+                div.style.textDecoration="none";
+                div.style.boxShadow="box-shadow: 12px 12px 28px dark-blue;"
+                job_suggest.appendChild(div);
                 console.log(elem.company);
                 console.log(elem.title);
                 console.log(elem.jobProviders[0].url);
