@@ -1,4 +1,4 @@
-# Project Title: Resume Build (Integrated with Ai)
+# Resume Build (Integrated with Ai)
 
 ## Overview
 Interview Ready With AI is an innovative JavaScript project aimed at empowering users to excel in their job interviews through an interactive platform. Leveraging the power of artificial intelligence, this platform provides users with personalized assistance, including resume analysis, job suggestions, project recommendations, a customized roadmap, and an AI-driven mock interviewer. With a focus on user-centric design and cutting-edge technology, Interview Ready With AI revolutionizes the interview preparation process, helping users showcase their skills and land their dream jobs.
