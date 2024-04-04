@@ -287,7 +287,7 @@ async function apifetching(){
                 div.style.backgroundColor="rgb(168, 233, 255)";
                 div.style.color="dark-blue";
                 div.style.textDecoration="none";
-                div.style.boxShadow="box-shadow: 12px 12px 28px dark-blue;"
+                div.style.boxShadow="box-shadow: 12px 12px 28px #00566b";
                 job_suggest.appendChild(div);
                 console.log(elem.company);
                 console.log(elem.title);

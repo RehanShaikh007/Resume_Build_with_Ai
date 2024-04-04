@@ -545,13 +545,17 @@
     const md = window.markdownit();
     const htmlMarkup = md.render(text);
     let div1 = document.createElement("div");
-    div1.style.fontSize
+    div1.style.color="black";
+    // div1.style.border="1px solid black";
+    // div1.style.padding="5%";
+    // div1.style.list-style-type= "none";
     // div1.style.color = "white";
     // div1.style.padding = "0 10%";
     div1.innerHTML = `${htmlMarkup}`;
     document.querySelector(".project_suggest").appendChild(div1);
     console.log(htmlMarkup);
     document.querySelector("#project_section").style.display="block";
+    document.querySelector("#project_section").style.color="#00566b";
     // console.log(response);
                     // console.log(ele);
                    

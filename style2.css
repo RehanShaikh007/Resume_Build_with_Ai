@@ -499,6 +499,7 @@ textarea{
     justify-content: space-between;
 }
 #project_section{
+    margin-left: 3%;
     display: none;
     margin-top: 10%;
     width: 100%;
@@ -508,6 +509,45 @@ textarea{
 
 .project_css{
     font-size: 5em;
+}
+.project_suggest ul{
+  list-style-type: none;
+}
+.project_suggest ol{
+    list-style-type: none;
+    display: none;
+  }
+  .project_suggest pre{
+    display: none;
+  }
+.project_suggest{
+    margin-top: 2%;
+    line-height: 2em;
+    width: 90%;
+    height: 3588px;
+    /* border: 1px solid black; */
+    overflow-y: scroll;
+    /* overflow: hidden; */
+}
+.project_suggest::-webkit-scrollbar {
+    display: none;
+}
+.project_suggest ul{
+    color: white;
+    padding: 1em;
+    background-color: #00566b;
+    border-radius: 10px;
+}
+.project_suggest p{
+    color: white;
+    padding: 1em;
+    background-color: #03a7bc;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+.project_suggest p{
+    margin-bottom: 1%;
+    font-size: 1em;
 }
 
 
@@ -605,7 +645,7 @@ textarea{
   
    }
    footer{
-    margin-top: 10%;
+    margin-top: 1%;
     color: white;
     background-color: black;
    }
