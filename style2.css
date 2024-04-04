@@ -741,3 +741,170 @@ textarea{
     }
    
 }
+
+@media only screen and (max-width: 768px) {
+
+    .btn {
+        font-size: 12.5px;
+        font-weight: 600;
+        padding: 1rem 1rem;
+        border-radius: 4px;
+        display: inline-block;
+    }
+
+    .btn-primary {
+        background-color: #00566b;
+        color: white;
+        border: 1px solid var(--clr-blue);
+        transition: var(--transition);
+        border-radius: 10px;
+    }
+
+    .form-control {
+        border-radius: none;
+        border: 3px solid rgba(0, 0, 0, 0.1);
+        font-size: 11px;
+        padding: 0.8rem 1rem;
+        font-family: inherit;
+        width: 84%;
+        outline: 0;
+        transition: var(--transition);
+    }
+
+    .preview-cnt {
+        font-size: 0.9em;
+        margin-left: 2%;
+        margin-top: 5%;
+        width: 96%;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 32% auto;
+        box-shadow: rgba(149, 157, 165, 0.644) 0px 8px 24px;
+        overflow: hidden;
+    }
+    .job_suggest h2 {
+        margin-bottom: 2%;
+        font-size: 18px;
+    }
+
+    .job_suggest .apply:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #00566b;
+        font-size: 13px;
+    }
+    
+    .job_suggest .apply {
+        text-decoration: none;
+        background-color: #00566b;
+        color: white;
+        padding: 3%;
+        border-radius: 10px;
+    }
+      /* Adjust footer */
+  footer {
+    text-align: center;
+    display: block;
+}
+
+/* Adjust footer-links */
+
+
+/* Adjust sociallinks */
+.sociallinks {
+  font-size: 24px;
+    margin-bottom: 20px; /* Add space between social icons */
+}
+
+/* Adjust imgplay */
+.imgplay {
+    margin-top: 20px; /* Add space above app store images */
+}
+.imgplay img {
+  width: 97px;
+  height: 35px;
+}
+.about a {
+margin-bottom: 15px;
+font-size: 12px;
+}
+.service a {
+margin-bottom: 15px;
+font-size: 12px;
+}
+/* Adjust centered-content */
+.centered-content {
+    text-align: center;
+    margin-top: 20px; /* Add space above the international section */
+}
+
+/* Adjust Flag image */
+.centered-content img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Adjust copyright-content */
+.copyright-content {
+    text-align: center;
+    margin-top: 20px; /* Add space above copyright text */
+}
+/* Adjust footer-linkse for smaller screens */
+.footer-linkse {
+text-align: center; /* Center align the links */
+margin-bottom: 20px; /* Add some space below each link section */
+}
+
+.footer-linkse a {
+display: block; /* Make each link a block element */
+margin-bottom: 5px; /* Add some space between each link */
+}
+#flag{
+margin-right: 220px;
+}
+#flagimg{
+margin-left: 210px;
+}
+.footer-links {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between; /* Align items to start and evenly distribute space between them */
+
+}
+
+.footer-links .stay,
+.footer-links .footer-linkse {
+flex-basis: calc(50% - 10px); /* Each column takes up 50% width with 10px spacing in between */
+padding: 0 5px; /* Add spacing between columns */
+box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Adjust column width for smaller screens */
+
+.footer-links .stay,
+.footer-links .footer-linkse {
+    flex-basis: 100%; /* Each column takes up 100% width on smaller screens */
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 48%; /* Each column takes up almost half of the container */
+}
+
+
+.custom_container img {
+  height: 100px;
+  width: 100px;
+}
+
+.custom_container h1 {
+margin: 40px 0;
+font-size: 1.8em;
+}
+
+
+}
