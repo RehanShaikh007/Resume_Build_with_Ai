@@ -278,7 +278,7 @@ async function apifetching(){
                 <p>${elem.employmentType}
                 <p>${elem.description}</p>
                 <br>
-                <a class="apply" href="elem.jobProviders[0].url">Apply Now</a>`;
+                <a class="apply" href=${elem.jobProviders[0].url}>Apply Now</a>`;
                 // div.style.border="2px solid black";
                 // div.style.padding="15px";
                 // div.style.margin="10px";
