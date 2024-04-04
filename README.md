@@ -55,8 +55,9 @@ To set up Interview Ready With AI locally, follow these steps:
 6. Access the application in your browser at `(https://rehanshaikh007.github.io/Resume_Build_with_Ai/)`.
 ## Contributing
 We welcome contributions from the community to enhance Interview Ready With AI. If you have any feature requests, bug reports, or suggestions for improvements, please feel free to open an issue or submit a pull request on our [GitHub repository](https://rehanshaikh007.github.io/Resume_Build_with_Ai/)).
-## Watch Live
-https://rehanshaikh007.github.io/Resume_Build_with_Ai/
+## [Watch Live](https://rehanshaikh007.github.io/Resume_Build_with_Ai/)
+
+
 ---
 Resume Build (Integrated With Ai) - Your Partner in Interview Success!
 
