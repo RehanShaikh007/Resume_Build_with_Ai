@@ -252,7 +252,7 @@ function showjobdata(){
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'dbab18be68msh283e2b169f5f563p1e5020jsn86680e739786',
+            'X-RapidAPI-Key': 'e15081ef03mshe176494f1ea5c9ap14e37ejsnb84bba330622',
             'X-RapidAPI-Host': 'jobs-api14.p.rapidapi.com'
         }
     };
@@ -280,14 +280,14 @@ async function apifetching(){
                 <br>
                 <a class="apply" href="elem.jobProviders[0].url">Apply Now</a>`;
                 // div.style.border="2px solid black";
-                div.style.padding="15px";
-                div.style.margin="10px";
+                // div.style.padding="15px";
+                // div.style.margin="10px";
                 // div.style.borderRadius="15px";
-                div.style.width="45%";
-                div.style.backgroundColor="rgb(168, 233, 255)";
-                div.style.color="dark-blue";
+                div.style.width="100%";
+                // div.style.backgroundColor="rgb(168, 233, 255)";
+                // div.style.color="dark-blue";
                 div.style.textDecoration="none";
-                div.style.boxShadow="box-shadow: 12px 12px 28px #00566b";
+                // div.style.boxShadow="box-shadow: 12px 12px 28px #00566b";
                 job_suggest.appendChild(div);
                 console.log(elem.company);
                 console.log(elem.title);

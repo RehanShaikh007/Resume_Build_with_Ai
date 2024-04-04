@@ -212,7 +212,7 @@ body{
 }
 .cv-form-row{
     padding: 3rem 2rem 0 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 3px solid rgba(0, 0, 0, 0.08);
     margin-bottom: 1rem;
     position: relative;
 }
@@ -280,7 +280,7 @@ textarea{
 .preview-cnt{
     font-size: 0.9em;
     margin-left: 5%;
-    margin-top: 22%;
+    margin-top: 11%;
     width: 100%;
     border-radius: 5px;
     display: grid;
@@ -467,7 +467,7 @@ textarea{
     justify-content: space-between;
     /* border: 2px solid red; */
     width: 100%;
-    margin-top: 10%;
+    margin-top: 4%;
     margin-left: 4%;
 }
 #job-sg{
@@ -491,20 +491,63 @@ textarea{
 }
 #job_section{
     color:#00566b;
+    width: 46%;
 }
+#job_section h1{
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: 5%;
+    color: #00566b;
+}
+#project_section h1{
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-bottom: 5%;
+    color: #00566b;
+}
+
 .job_suggest{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    height: 3800px;
+    overflow-y: scroll;
+    /* border: 2px solid black; */
+
+}
+.job_suggest .apply{
+    text-decoration: none;
+    background-color: #00566b;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+.job_suggest .apply:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #00566b;
+}
+.job_suggest a{
+    color: aqua;
+}
+.job_suggest div{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 5%;
+    background-color: #0292a5;
+    color: white;
+    line-height: 1.5em;
+}
+.job_suggest::-webkit-scrollbar {
+    display: none;
 }
 #project_section{
     margin-left: 3%;
     display: none;
     margin-top: 10%;
-    width: 100%;
+    width: 45%;
     /* border: 2px solid red; */
-   
 }
 
 .project_css{
@@ -523,8 +566,8 @@ textarea{
 .project_suggest{
     margin-top: 2%;
     line-height: 2em;
-    width: 90%;
-    height: 3588px;
+    width: 100%;
+    height: 3800px;
     /* border: 1px solid black; */
     overflow-y: scroll;
     /* overflow: hidden; */
@@ -541,7 +584,7 @@ textarea{
 .project_suggest p{
     color: white;
     padding: 1em;
-    background-color: #03a7bc;
+    background-color: #0292a5;
     border-radius: 10px;
     margin-top: 1%;
 }
@@ -549,7 +592,20 @@ textarea{
     margin-bottom: 1%;
     font-size: 1em;
 }
+.project_suggest p:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: #0292a5;
+    border: 2px solid #0292a5;
 
+}
+#job_project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5%;
+}
 
 
 
@@ -645,7 +701,7 @@ textarea{
   
    }
    footer{
-    margin-top: 1%;
+    margin-top: 2%;
     color: white;
     background-color: black;
    }
