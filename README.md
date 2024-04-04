@@ -23,7 +23,7 @@ Interview Ready With AI is an innovative JavaScript project aimed at empowering 
 ![Resume1](https://github.com/RehanShaikh007/Resume_Build_with_Ai/assets/143618117/710eb306-30f7-40f8-a198-af59d16491b3)
 ### Job & Project Suggestion Section
 ![resume2](https://github.com/RehanShaikh007/Resume_Build_with_Ai/assets/143618117/650a5b32-ae04-4e99-b704-a360a05768eb)
-### Print Serction
+### Print Section
 ![print](https://github.com/RehanShaikh007/Resume_Build_with_Ai/assets/143618117/38327599-b7cc-444a-a586-f488fc04f149)
 
 ## Tech Stack
